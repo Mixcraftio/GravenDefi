@@ -1,0 +1,347 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    transition: all 0.5s;
+    resize: none;
+}
+
+body{
+    background-color: rgb(230, 238, 255);
+}
+
+span{
+    color: black;
+}
+
+a{
+    color: rgb(255, 133, 255);
+}
+
+a:hover{
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+/*Navigation*/
+nav{
+    top: 0px;   left: 0px;
+    position: fixed;
+    height: 50px;   width: 100%;
+    background-color: rgb(6, 174, 191);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.75);
+    text-align: center;
+}
+
+.navc{
+    height: 30px; width: 100%;
+    margin: 10px;
+    font-size: 25px;
+}
+
+nav a{
+    color: black;
+}
+
+#menu{
+    display: none;
+}
+.menubtn{
+    float: left;
+    cursor: pointer;
+    height: 30px;
+}
+
+ul{
+    text-align: left;
+}
+ul.main{
+    display: inline-block;
+    top: 50px;    right: -100%;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(6, 174, 191);
+    border-bottom-left-radius: 10px;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.75);
+}
+
+#menu:checked ~ ul.main{
+    right: -80%;
+}
+
+@media(max-width: 1100px){
+    ul.main{
+        top: 50px; left: -1280px;
+        text-align: center;
+        border-bottom-left-radius: 0px;
+    }
+    ul.main li{
+        margin: 5%;
+    }
+    ul.main li ul{
+        text-align: center;
+    }
+    #menu:checked ~ ul.main{
+        top: 50px; left: 0px;
+        
+    }
+}
+
+li{
+    margin: 5px;
+    font-size: 25px;
+    list-style-type: none;
+}
+li a, li label{
+    color: black;
+}
+
+li.contact{
+    height: fit-content;
+}
+ul.secondary{
+    display: none;
+    list-style-type: none;
+    margin-left: 15px;
+}
+img.f{
+    height:10px
+}
+#contactmenu{
+    display: none;
+}
+.contactmenubtn{
+    cursor: pointer;
+}
+#contactmenu:checked ~ ul.secondary{
+    display: block;
+}
+#contactmenu:checked ~ img.f{
+    transform: rotate(90deg);
+}
+/*Navigation-END*/
+
+/*Home*/
+#home{
+    width: fit-content;
+    margin: 55px auto 20px;
+    text-align: center;
+    border: 10px gray ridge;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+#home div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#home div img{
+    width: 100%;
+}
+/*Home-END*/
+
+/*Infos*/
+#infos{
+    width: fit-content;
+    margin: 55px auto 20px;
+    text-align: center;
+    border: 10px gray ridge;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+#infos div{
+    display: inline-block;
+    vertical-align: middle;
+}
+/*Infos-END*/
+
+/*Services*/
+#services{
+    width: fit-content;
+    margin: 55px auto 20px;
+    text-align: center;
+    border: 10px gray ridge;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+#services div{
+    display: inline-block;
+    vertical-align: middle;
+}
+/*Services-END*/
+
+/*About*/
+#about{
+    width: fit-content;
+    margin: 55px auto 20px;
+    text-align: center;
+    border: 10px gray ridge;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+#about div{
+    display: inline-block;
+    vertical-align: middle;
+}
+/*About-END*/
+
+/*Appointments*/
+#appointment{
+    width: fit-content;
+    margin: 55px auto 20px;
+    text-align: center;
+    border: 10px gray ridge;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+#appointment div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#appointment div img{
+    width: 100%;
+}
+/*Appointment-END*/
+
+/*App*/
+#application{
+    width: fit-content;
+    margin: 55px auto 20px;
+    text-align: center;
+    border: 10px gray ridge;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+#application div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#application div img{
+    width: 100%;
+}
+
+#application div a h3{
+    margin:5px
+}
+/*App-END*/
+
+/*Doctors*/
+#doctors{
+    width: fit-content;
+    margin: 55px auto 20px;
+    text-align: center;
+    border: 10px gray ridge;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+#doctors div{
+    display: inline-block;
+}
+
+#doctors div img{
+    height: 500px;
+}
+
+#doctors div.sub{
+    display: block;
+    height: fit-content;
+}
+/*Doctors-END*/
+
+/*News*/
+#news{
+    width: fit-content;
+    margin: 55px auto 20px;
+    text-align: center;
+    border: 10px gray ridge;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+#news div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#news img{
+    height: 200px;
+    border-radius: 10px;
+}
+/*News-END*/
+
+/*Contact*/
+#contact{
+    width: fit-content;
+    margin: 55px auto 20px;
+    text-align: center;
+    border: 10px gray ridge;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+#contact div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#contact input, button{
+    margin: 10px;
+}
+/*Contact-END*/
+
+/*Facts*/
+#facts{
+    width: fit-content;
+    margin: 55px auto 20px;
+    text-align: center;
+    border: 10px gray ridge;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+#facts div{
+    display: inline-block;
+    vertical-align: middle;
+}
+/*Facts-END*/
+
+/*Footer*/
+footer{
+    display: inline-flex;
+    justify-content: space-evenly;
+    height: fit-content;    width: 100%;
+    background-color: rgb(6, 174, 191);
+    box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.75);
+}
+
+footer a{
+    color: black;
+}
+
+footer div{
+    margin: 10px 0px;
+    text-align: center;
+    width: fit-content;
+}
+
+footer div.smain{
+    display: inline-flex;
+    width: 50%;
+}
+
+footer div.smain div{
+    margin: auto;
+    font-size: 20px;
+}
+/*Footer-END*/
