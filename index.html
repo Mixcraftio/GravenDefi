@@ -51,7 +51,7 @@
 		<!-- //menu de navigation -->
 
 		<!-- bannière principale -->
-		<div id="home">
+		<section id="home">
 			<div>
 				<img src="img/banner.png" alt="" />
 			</div>
@@ -61,8 +61,10 @@
 				<p>La consultation à distance n'a jamais été aussi simple</p>
 				<a href="#appointment"><h3>Prendre rendez-vous</h3></a>
 			</div>
-		</div>
+		</section>
 		<!-- //bannière principale -->
+
+		<div class="separator"></div>
 
 		<!-- Informations -->
 		<section id="infos">
@@ -78,7 +80,6 @@
 						</div>
 					</div>
 				</div>
-				<br>
 				<div>
 					<div>
 						<div>
@@ -91,7 +92,6 @@
 						</div>
 					</div>
 				</div>
-				<br>
 				<div>
 					<div>
 						<div>
@@ -108,60 +108,45 @@
 		<!-- //Informations -->
 
 		<!-- Soins -->
-		<div id="services">
+		<section id="services">
 			<div>
+				<h3>Nos soins</h3>
+				<h6>Que proposons nous ?</h6>
+			</div>
+			<div class="services">
 				<div>
-					<h6>Que proposons nous ?</h6>
-					<h3>Nos soins</h3>
+					<span class="fa fa-stethoscope"></span>
+					<h4>Généraliste</h4>
+					<p>Une simple révision, un besoin immédiat sur une demande non specifique</p>
 				</div>
-				<br>
 				<div>
-					<div>
-						<div>
-							<span class="fa fa-stethoscope"></span>
-							<h4>Généraliste</h4>
-							<p>Une simple révision, un besoin immédiat sur une demande non specifique</p>
-						</div>
-					</div>
-					<br>
-					<div>
-						<div>
-							<span class="fa fa-user-md"></span>
-							<h4>Dermatologie</h4>
-							<p>Etude de la peau, des cheveux, des poils et des ongles ainsi qu'à la prévention, au diagnostic et au traitement des maladies qui les touchent. </p>
-						</div>
-					</div>
-					<br>
-					<div>
-						<div>
-							<span class="fa fa-wheelchair"></span>
-							<h4>Cardialogie</h4>
-							<p>Malformations congénitales, troubles du rythme et de la conduction, pathologies des valves, insuffisance cardiaque, cardiomyopathies</p>
-						</div>
-					</div>
-					<br>
-					<div>
-						<div>
-							<span class="fa fa-plus-square"></span>
-							<h4>Urgence Covid</h4>
-							<p>Cas contact, test PCR, prise de sang, consultation urgente</p>
-						</div>
-					</div>
+					<span class="fa fa-user-md"></span>
+					<h4>Dermatologie</h4>
+					<p>Etude de la peau, des cheveux, des poils et des ongles ainsi qu'à la prévention, au diagnostic et au traitement des maladies qui les touchent. </p>
+				</div>
+				<div>
+					<span class="fa fa-wheelchair"></span>
+					<h4>Cardialogie</h4>
+					<p>Malformations congénitales, troubles du rythme et de la conduction, pathologies des valves, insuffisance cardiaque, cardiomyopathies</p>
+				</div>
+				<div>
+					<span class="fa fa-plus-square"></span>
+					<h4>Urgence Covid</h4>
+					<p>Cas contact, test PCR, prise de sang, consultation urgente</p>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!-- //Soins -->
 
 		<!-- A Propos -->
 		<section id="about">
-			<div>
-				<h3>A <span> propos</span> </h3>
+			<div class="amain">
+				<h3>A propos</h3>
 				<div>
 					<p>Depuis plus de 3 ans, notre application propose differents services en temp reel pour suivre les pathologies de nos patients. Dans un cadre professionnel et humain</p>
 					<p>Une simple consultation à distance, une question, un soin spécifique, nous sommes la pour répondre à vos besoins</p>
 				</div>
-				<br>
-				<div>
+				<div class="imgs">
 					<div>
 						<span class="fa fa-h-square"></span>
 						<h4>Humain</h4>
@@ -179,24 +164,25 @@
 		</section>
 		<!-- //A Propos -->
 
+		<div class="separator"></div>
+
 		<!-- Formulaire rendez-vous -->
 		<section id="appointment">
 			<div>
-				<div>
-					<h3>Prendre un rendez-vous</h3>
-					<form action="#" method="post">
-						<input placeholder="Nom de famille"name="name" type="text" required="">
-						<input placeholder="Adresse email" name="email" type="email" required="">
-						<input placeholder="Numéro de contact" name="number" type="text" required="">
-						<input name="date" type="date" required="">
-						<input placeholder="Entrer l'horaire souhaité" name="time" type="text" required="">
-						<button>Soumettre </button>
-					</form>
-				</div>
-				<br>
-				<div>
-					<img src="img/app1.png" alt="">
-				</div>
+				<img src="img/app1.png" alt="">
+			</div>
+			<div class="form">
+				<h3>Prendre un rendez-vous</h3>
+				<form action="#" method="post">
+					<input placeholder="Nom de famille" type="text" required="">
+					<input placeholder="Adresse email" type="email" required="">
+					<input placeholder="Numéro de contact" type="text" required="">
+					<input type="date" required="">
+					<input placeholder="Entrer l'horaire souhaité" type="text" required="">
+					<div class="wrapper">
+						<button>Soumettre</button>
+					</div>
+				</form>
 			</div>
 		</section>
 		<!-- //Formulaire rendez-vous  -->
@@ -204,16 +190,17 @@
 		<!-- Télécharger l'application -->
 		<section id="application">
 			<div>
-				<div>
-					<img src="img/mid.png" alt=""/>
-				</div>
-				<div>
-					<p>Playstore - Applestore</p>
-					<h3>Télécharger l'application mobile</h3>
-					<p>Consultation par visio, suivi de pathologie, prise de rendez-vous et prise en charge urgente en une seule application</p>
-					<a href="#playstore"><h3><span class="fa fa-google"></span>Playstore</h3></a>
-					<a href="#applestore"><h3><span class="fa fa-apple"></span>Apple store</h3></a>
-				</div>
+				<img src="img/mid.png" alt=""/>
+			</div>
+			<div>
+				<h2>Télécharger l'application mobile</h2>
+				<p>Consultation par visio, suivi de pathologie, prise de rendez-vous <br> et prise en charge urgente en une seule application, et disponible sur tout les smartphones.</p>
+				<a href="#playstore">
+					<img src="img/google.png" class="badge">
+				</a>
+				<a href="#applestore">
+					<img src="img/apple.svg" class="badge">
+				</a>
 			</div>
 		</section>
 		<!-- //Télécharger l'application -->
@@ -221,43 +208,45 @@
 		<!-- Médecins -->
 		<section id="doctors">
 			<div>
-				<div>
+				<span>
 					<h3>Nos specialistes</h3>
 					<h6>Professionnels</h6>
+				</span>	
+			</div>
+			<br>
+			<div>
+				<div class="doctor">
+					<img src="img/t3.png" alt="">
+					<div class="sub">
+						<h4>Teva bristner</h4>
+						<h6>Généraliste</h6>
+					</div>
 				</div>
-				<br>
-				<div>
-					<div>
-						<img src="img/t3.png" alt="">
-						<div class="sub">
-							<h4>Teva bristner</h4>
-							<h6>Généraliste</h6>
-						</div>
+				<div class="doctor">
+					<img src="img/t1.png" alt="">
+					<div class="sub">
+						<h4>Elisa dupont</h4>
+						<h6>Cardiologue</h6>
 					</div>
-					<div>
-						<img src="img/t1.png" alt="">
-						<div class="sub">
-							<h4>Elisa dupont</h4>
-							<h6>Cardiologue</h6>
-						</div>
-					</div>
-					<div>
-						<img src="img/t2.png"alt="">
-						<div class="sub">
-							<h4>Rinto dabesa</h4>
-							<h6>Dermatologue</h6>
-						</div>
+				</div>
+				<div class="doctor">
+					<img src="img/t2.png"alt="">
+					<div class="sub">
+						<h4>Rinto dabesa</h4>
+						<h6>Dermatologue</h6>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- Médecins -->
 
+		<div class="separator"></div>
+
 		<!-- Articles de blog -->
 		<section id="news">
 			<div>
-				<h3>Nouveautés</h3>
-				<h6>Blog Post</h6>
+				<h3 class="title">Nouveautés</h3>
+				<h4>Blog Post</h4>
 			</div>
 			<br>
 			<div>
@@ -271,7 +260,7 @@
 					<div>
 						<span>Février 20, 2021 - blog</span>
 						<a href="#"><h3>TEST COVID A DOMICILE</h3></a>
-						<p>Découvez comment éviter les files d'attentes avec le test PCR à domicile</p>
+						<p>Découvez comment éviter les files d'attentes avec le test PCR à domicile.</p>
 					</div>
 				</div>
 				<br>
@@ -285,7 +274,7 @@
 					<div>
 						<span>Février 20, 2021 - blog</span>
 						<a href="#"><h3>L'APPLICATION VERSION 2.0</h3></a>
-						<p>Découvrez les nouveautés de la nouvelle interface de l'appli</p>
+						<p>Découvrez les nouveautés de la nouvelle interface de l'appli.</p>
 					</div>
 				</div>
 				<br>
@@ -299,7 +288,7 @@
 					<div>
 						<span>Février 20, 2021 - blog</span>
 						<a href="#"><h3>SUIVI INTELLIGENT</h3></a>
-						<p>Des statistiques avancées sur comment nous rendons la prise de rendez-vous facile pour tous</p>
+						<p>Des statistiques avancées sur comment nous rendons la prise de rendez-vous facile pour tous.</p>
 					</div>
 				</div>
 			</div>
@@ -308,19 +297,21 @@
 
 		<!-- Contact -->
 		<section id="contact">
+			<span class="fa fa-phone"></span>
 			<div>
-				<h6>Une question ? un conseil ?</h6>
-				<h3>Contactez-nous</h3>
+				<div>
+					<h6>Une question ? un conseil ?</h6>
+					<h3>Contactez-nous</h3>
+				</div>
+				<form action="#" method="post">
+					<input type="text" placeholder="Entrer votre nom..." required="">
+					<input type="email" placeholder="Entrer votre email..." required="">
+					<input type="text" placeholder="Entrer Le Sujet..." required="">
+					<input type="text" placeholder="Entrer votre numero de téléphone" required="">
+					<textarea placeholder="Entrer votre message"></textarea>
+					<button type="submit">Envoyer</button>
+				</form>
 			</div>
-			<br>
-			<form action="#" method="post">
-				<input type="text" name="name" placeholder="Entrer votre nom..." required="">
-				<input type="email" name="email" placeholder="Entrer votre email..." required="">
-				<input type="text" name="subject" placeholder="Entrer Le Sujet..." required="">
-				<input type="text" name="number" placeholder="Entrer votre numero de téléphone" required="">
-				<textarea name="message" placeholder="Entrer votre message"></textarea>
-				<button type="submit">Envoyer</button>
-			</form>
 		</section>
 		<!-- //Contact -->
 
@@ -329,13 +320,13 @@
 			<!-- chiffres -->
 			<div>
 				<h3>Gravizen en quelques chiffres</h3>
-				<div>
+				<div class="numbers">
 					<div>
-						<h3>28K+</h3>
+						<h4>28K+</h4>
 						<p>Consultations</p>
 					</div>
 					<div>
-						<h3>927</h3>
+						<h4>927</h4>
 						<p>Avis</p>
 					</div>
 				</div>

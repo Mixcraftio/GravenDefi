@@ -1,3 +1,8 @@
+@font-face{
+    font-family: "Montserrat";
+    src: url("/graven/fonts/Montserrat.ttf");
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -8,7 +13,7 @@
 }
 
 body{
-    background-color: rgb(230, 238, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 span{
@@ -16,7 +21,7 @@ span{
 }
 
 a{
-    color: rgb(255, 133, 255);
+    color:  rgb(48, 113, 255);
 }
 
 a:hover{
@@ -33,6 +38,7 @@ nav{
     background-color: rgb(6, 174, 191);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.75);
     text-align: center;
+    z-index: 1;
 }
 
 .navc{
@@ -100,7 +106,7 @@ li a, li label{
 }
 
 li.contact{
-    height: fit-content;
+    height: 100%;
 }
 ul.secondary{
     display: none;
@@ -126,19 +132,32 @@ img.f{
 }
 /*Navigation-END*/
 
+/*Separators*/
+div.separator{
+    margin: 10px auto;
+    height: 0px; width: 90%;
+    border-bottom: 4px rgb(0, 0, 0) solid;
+}
+/*Separators-END*/
+
 /*Home*/
 #home{
-    width: fit-content;
-    margin: 55px auto 20px;
+    display: inline-block;
+    width: 100%;
     text-align: center;
-    border: 10px gray ridge;
-    border-radius: 15px;
-    background-color: rgb(255, 255, 255);
+    margin: 50px auto 10px;
+    font-size: 25px;
 }
 
 #home div{
     display: inline-block;
     vertical-align: middle;
+}
+
+#home h1{
+    color: rgb(6, 174, 191);
+    font-size: 60px;
+    font-family: Montserrat;
 }
 
 #home div img{
@@ -148,80 +167,231 @@ img.f{
 
 /*Infos*/
 #infos{
-    width: fit-content;
-    margin: 55px auto 20px;
+    width: 100%;
     text-align: center;
-    border: 10px gray ridge;
-    border-radius: 15px;
-    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    flex-direction: row;
+    font-size: 20px;
 }
 
 #infos div{
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    justify-content: space-around;
+}
+
+#infos div div{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+#infos div div span{
+    color: rgb(6, 174, 191);
+    font-size: 40px;
+}
+
+@media(max-width: 1100px){
+    #infos div{
+        transition: all 0.5s;
+        flex-direction: column;
+    }
+    #infos div div{
+        transition: all 0.5s;
+        margin: 5px auto;
+    }
 }
 /*Infos-END*/
 
 /*Services*/
 #services{
-    width: fit-content;
-    margin: 55px auto 20px;
+    width: 100%;
     text-align: center;
-    border: 10px gray ridge;
-    border-radius: 15px;
-    background-color: rgb(255, 255, 255);
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
 
-#services div{
-    display: inline-block;
-    vertical-align: middle;
+#services div h3{
+    font-family: Montserrat;
+    font-size: 30px;
+    color: rgb(6, 174, 191);
+}
+
+#services div h6{
+    font-size: 15px;
+}
+
+#services div.services{
+    display: flex;
+    justify-content: space-around;
+}
+
+#services div.services div{
+    margin: 10px auto;
+    font-size: 20px;
+    width: 250px;
+}
+
+#services div.services div span{
+    color: rgb(6, 174, 191);
+    font-size: 40px;
+}
+
+@media(max-width: 1100px){
+    #services div{
+        transition: all 0.5s;
+        flex-direction: column;
+    }
+    #services div div{
+        transition: all 0.5s;
+        margin: 5px auto;
+    }
 }
 /*Services-END*/
 
 /*About*/
 #about{
-    width: fit-content;
-    margin: 55px auto 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     text-align: center;
-    border: 10px gray ridge;
-    border-radius: 15px;
-    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
 }
 
-#about div{
-    display: inline-block;
-    vertical-align: middle;
+#about h3{
+    margin: 10px;
+    color: rgb(6, 174, 191);
+    font-family: Montserrat;
+    font-size: 30px;
+}
+
+#about div.amain{
+    width: 80%;
+    margin: 0px auto;
+}
+
+#about div.amain div p{
+    font-size: 20px;
+}
+
+#about div div.imgs{
+    display: flex;
+    margin: 10px;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+#about div div.imgs span{
+    color: rgb(6, 174, 191);
 }
 /*About-END*/
 
 /*Appointments*/
 #appointment{
-    width: fit-content;
-    margin: 55px auto 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
     text-align: center;
-    border: 10px gray ridge;
-    border-radius: 15px;
-    background-color: rgb(255, 255, 255);
+    margin: 50px auto;
 }
 
 #appointment div{
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(6, 174, 191);
 }
 
 #appointment div img{
-    width: 100%;
+    height: 640px; width: 640px;
+}
+
+#appointment div h3{
+    margin:5px ;
+    font-size: 25px;
+    font-family: Montserrat;
+}
+
+#appointment form{
+    margin: 0px 0px 5px;
+    height: 400px; width: 400px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 2px rgb(6, 174, 191) solid;
+    border-radius: 10px;
+    box-shadow: 5px 3px 3px rgb(6, 174, 191);
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+#appointment form:hover{
+    margin: 0px auto 10px;
+    height: 420px; width: 420px;
+    box-shadow: 5px 8px 3px rgb(6, 174, 191);
+}
+
+#appointment input{
+    display: block;
+    font-family: Montserrat;
+    font-size: 18px;
+    color: rgb(110, 110, 110);
+    margin: 25px auto;
+    height: 35px; width: 80%;
+    border: none;   
+    border-bottom: 5px rgb(6, 174, 191) solid;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+#appointment button{
+    margin: auto;
+    color: rgb(6, 174, 191);
+    font-size: 15px;
+    background-color: transparent;
+    height: 30px; width: 80px;
+    border: none;
+    border: 3px rgb(6, 174, 191) solid;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+#appointment button:hover{
+    font-size: 20px;
+    height: 50px; width: 120px;
+    border: 5px rgb(6, 174, 191) solid;
+    margin-top: 0px;
+}
+
+@media(max-width: 1100px){
+    #appointment{
+        flex-direction: column;
+        color: rgb(6, 174, 191);
+    }
+    #appointment div img{
+        width: 80%; height: 100%;
+        margin: 0px auto;
+    }
+    #appointment div.form{
+        width: 100%;
+    }
+    #appointment form{
+        width: 80%;
+        margin: 0px auto 5px;
+    }
+    #appointment form:hover{
+        margin: 0px auto 10px;
+        width: 90%;
+        box-shadow: 5px 5px 5px rgb(6, 174, 191);
+    }
 }
 /*Appointment-END*/
 
 /*App*/
 #application{
-    width: fit-content;
-    margin: 55px auto 20px;
+    display: inline-block;
+    width: 100%;
     text-align: center;
-    border: 10px gray ridge;
-    border-radius: 15px;
-    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    background-color: rgb(6, 174, 191);
 }
 
 #application div{
@@ -229,101 +399,266 @@ img.f{
     vertical-align: middle;
 }
 
+#application h2{
+    margin: 5px;
+    font-size: 40px;
+    font-family: Montserrat;
+}
+
 #application div img{
     width: 100%;
 }
 
-#application div a h3{
-    margin:5px
+#application div img.badge{
+    margin: 10px;
+    height: 60px;
+    width: unset;
+}
+
+a:hover{
+    background: none;
 }
 /*App-END*/
 
 /*Doctors*/
 #doctors{
-    width: fit-content;
-    margin: 55px auto 20px;
+    display: inline-block;
+    width: 100%;
     text-align: center;
-    border: 10px gray ridge;
-    border-radius: 15px;
-    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
 }
 
-#doctors div{
+#doctors h3{
+    padding-top: 10px;
+    font-size: 30px;
+    color: rgb(6, 174, 191);
+    font-family: Montserrat;
+}
+
+#doctors h6{
+    font-size: 20px;
+    font-family: Montserrat;
+}
+
+
+#doctors div.doctor{
     display: inline-block;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(6, 174, 191, 0.25);
+    transition: all 0.5s;
 }
 
 #doctors div img{
+    padding: 5px;
     height: 500px;
 }
 
 #doctors div.sub{
     display: block;
-    height: fit-content;
+    font-family: Montserrat;
+    padding: 5px;
+    height: 100%;
+}
+
+#doctors div.doctor:hover{
+    margin: 15px;
+    background-color: rgba(6, 174, 191, 0.5);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
 }
 /*Doctors-END*/
 
 /*News*/
 #news{
-    width: fit-content;
-    margin: 55px auto 20px;
+    width: 100%;
     text-align: center;
-    border: 10px gray ridge;
-    border-radius: 15px;
-    background-color: rgb(255, 255, 255);
 }
 
 #news div{
-    display: inline-block;
-    vertical-align: middle;
+    width: 90%;
+    margin: 10px auto;
+    padding-bottom: 5px;
+}
+
+#news h3.title{
+    padding-top: 5px;
+    color: rgb(6, 174, 191);
+    font-family: Montserrat;
+    font-size: 30px;
 }
 
 #news img{
     height: 200px;
     border-radius: 10px;
 }
+
+#news div div{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+
+#news div div div{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-size: 20px;
+}
+
+#news div div div p{
+    margin: 0px auto;
+}
+
+#news div div div span{
+    width: fit-content;
+    margin: 0px auto;
+    border-bottom: 4px black solid;
+}
+
+#news div div div a{
+    margin: 10px;
+}
+
+@media(max-width: 1100px){
+    #news div div{
+        width: 90%;
+        flex-direction: column;
+    }
+    #news img{
+        width: 100%;
+    }
+}
 /*News-END*/
 
 /*Contact*/
 #contact{
-    width: fit-content;
-    margin: 55px auto 20px;
-    text-align: center;
-    border: 10px gray ridge;
-    border-radius: 15px;
-    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: rgb(6, 174, 191);
+}
+
+#contact span{
+    margin: auto 0px;
+    font-size: 400px;
+    transition: transform 0.5s;
+}
+
+#contact span:hover{
+    transform: rotate(25deg);
 }
 
 #contact div{
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-#contact input, button{
-    margin: 10px;
+#contact h3{
+    font-family: Montserrat;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+#contact h6{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto 10px;
+    height: fit-content; width: 400px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 4px white solid;
+    border-radius: 10px;
+    box-shadow: 5px 3px 3px white;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+#contact form:hover{
+    margin: 0px auto 20px;
+    height: 420px; width: 420px;
+    box-shadow: 5px 8px 3px white;
+}
+
+#contact input{
+    font-family: Montserrat;
+    font-size: 18px;
+    margin: 20px auto;
+    height: 30px; width: 80%;
+    border: none;   
+    border-bottom: 5px white solid;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+#contact textarea{
+    font-family: Montserrat;
+    font-size: 18px;
+    margin: 20px auto;
+    height: fit-content; width: 80%;
+    border: none;   
+    border-bottom: 5px white solid;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+#contact button{
+    margin:  0px auto 10px;
+    font-size: 15px;
+    background-color: transparent;
+    height: 30px; width: 80px;
+    border: none;
+    border: 3px white solid;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+#contact button:hover{
+    font-size: 20px;
+    height: 50px; width: 120px;
+    border: 5px white solid;
+    margin-top: 0px;
 }
 /*Contact-END*/
 
 /*Facts*/
 #facts{
-    width: fit-content;
-    margin: 55px auto 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     text-align: center;
-    border: 10px gray ridge;
-    border-radius: 15px;
-    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
 }
 
 #facts div{
-    display: inline-block;
-    vertical-align: middle;
+    margin: 10px auto;
+    width: 80%;
+    font-size: 20px;
+}
+
+#facts div h3{
+    color: rgb(6, 174, 191);
+    font-size: 30px;
+    font-family: Montserrat;
+}
+
+#facts div.numbers{
+    display: inline-flex;
+    width: 40%;
+    justify-content: space-between;
 }
 /*Facts-END*/
 
 /*Footer*/
 footer{
-    display: inline-flex;
-    justify-content: space-evenly;
-    height: fit-content;    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;    width: 100%;
     background-color: rgb(6, 174, 191);
     box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.75);
 }
@@ -335,16 +670,27 @@ footer a{
 footer div{
     margin: 10px 0px;
     text-align: center;
-    width: fit-content;
+    margin-bottom: 10px;
 }
 
 footer div.smain{
-    display: inline-flex;
+    display: flex;
     width: 50%;
 }
 
 footer div.smain div{
     margin: auto;
     font-size: 20px;
+}
+
+@media(max-width: 1100px){
+    footer{
+        flex-direction: column;
+    }
+    footer div.smain{
+        width: unset;
+        display: flex;
+        flex-direction: column;
+    }
 }
 /*Footer-END*/
