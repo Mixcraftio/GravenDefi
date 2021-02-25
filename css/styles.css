@@ -608,6 +608,7 @@ a:hover{
 }
 
 #contact button{
+    color: white;
     margin:  0px auto 10px;
     font-size: 15px;
     background-color: transparent;
